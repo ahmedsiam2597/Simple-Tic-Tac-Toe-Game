@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  user-select: none;
+  background-color: #23202a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.game {
+  max-width: 300px;
+  padding: 0 10px;
+}
+.title {
+  background-color: #ff3263;
+  padding: 10px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4);
+  position: relative;
+  border: 2px solid #ff3263;
+  box-shadow: inset 8px 8px 20px rgba(0, 0, 0, .6) ;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+.board .cell {
+  width: 85px;
+  height: 85px;
+  background-color: #ff3263;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
+    1px 4px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4),
+    1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+    1px 30px 60px rgba(16, 16, 16, 0.4);
+    border: 3px solid #ff3263;
+    box-shadow: inset 8px 8px 20px rgba(0, 0, 0, .5) , inset -5px -5px 20px rgba(0, 0, 0, .1) , 0 0 10px rgba(255, 255, 255, .1)  ;
+}
+.reset{
+    color: #eee;
+    background-color: #ff3263;
+    font-size: 20px;
+    font-weight: 700;
+    height: 45px;
+    width: 150px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius:5px ;
+    -webkit-border-radius:5px ;
+    -moz-border-radius:5px ;
+    -ms-border-radius:5px ;
+    -o-border-radius:5px ;
+    border: 2px solid #ff3263;
+    box-shadow: inset 3px 3px 20px rgba(0, 0, 0, .5) , inset -3px -3px 20px rgba(0, 0, 0, .1) , 0 0 10px rgba(255, 255, 255, .1) ;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    opacity: .8;
+}
+.reset:hover{
+    opacity: 1;
+}
